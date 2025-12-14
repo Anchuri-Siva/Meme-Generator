@@ -74,7 +74,7 @@ label input {
 
 .meme-img {
   width: 500px;             /* Your meme image size */
-  height: 500px;
+  height: auto;
   display: block;
   border-radius: 5px;
 }
