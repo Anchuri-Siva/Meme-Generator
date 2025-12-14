@@ -1,13 +1,112 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito",sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cat-img {
+  height: 50px;
+  width: 40px;
+  border-radius: 15px;
 }
+
+.Header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0 20px 30px;
+  color: white;
+  background-color: purple;
+  font-size: 22px;
+  gap: 10px;
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+/* .form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+} */
+
+button {
+  background-color: purple;
+  color: white;
+  font-family: "Nunito",sans-serif;
+  font-size: 22px;
+  padding: 10px;
+  margin: 5px;
+  border: 0;
+  width: 500px;
+  border-radius: 15px;
+}
+label {
+  display: flex;
+  flex-direction: column;  /* Stack vertically: text on top, input below */
+  gap: 8px;                /* Space between label text and input */
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+label input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.meme-container {
+  position: relative;       /* Container for positioning context */
+  display: inline-block;    /* Fits image size */
+  margin: 20px;
+}
+
+.meme-img {
+  width: 500px;             /* Your meme image size */
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.top-text, .bottom-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);  /* Perfect horizontal center */
+  color: white;
+  font-family:  sans-serif;  /* Classic meme font */
+  font-size: 22px;
+  font-weight: 800;
+  text-shadow: 
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000;       /* Black outline */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  max-width: 95%;
+  white-space: nowrap;    /* Allow wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top-text {
+  top: 10px;                /* Distance from top edge */
+}
+
+.bottom-text {
+  bottom: 10px;             /* Distance from bottom edge */
+}
+
+
+
